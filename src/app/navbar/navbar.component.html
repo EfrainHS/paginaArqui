@@ -1,0 +1,32 @@
+<nav>
+  <div class="logo">
+    <img src="" alt="">
+  </div>
+  <ul>
+    <li *ngIf="!isLogged">
+      <a href="" class="active">Inicio</a>
+    </li>
+    <li *ngIf="!isLogged">
+      <a href="" >Sobre Mi</a>
+    </li>
+    <li *ngIf="!isLogged">
+      <a href="" >Producción</a>
+    </li>
+    <li *ngIf="!isLogged">
+      <a href="" >Contacto</a>
+    </li>
+    <li *ngIf="!isLogged">
+      <a routerLink="user/login">Iniciar Sesión</a>
+    </li>
+
+    <li *ngIf="isLogged">
+      <a routerLink="user/profile">Perfil</a>
+    </li>
+    <li *ngIf="isLogged">
+      <a routerLink="user/admin">Administrar Contenido</a>
+    </li>
+    <li  *ngIf="isLogged">
+      <a href="" (click)="onLogout()">Cerrar Sesión</a>
+    </li>
+  </ul>
+</nav>
