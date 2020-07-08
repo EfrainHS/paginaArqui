@@ -40,8 +40,10 @@ export class LoginComponent implements OnInit {
   onLogin(): void {
     this.authService.loginEmailUser(this.email, this.password)
       .then((res) => {
+        this.isError = false;
         this.onLoginRedirect();
       }).catch(err => console.log('err', err.message));
+      this.isError=true;
   }
 
   onLogout() {

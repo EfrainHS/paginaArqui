@@ -15,7 +15,6 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { PerfilComponent } from './usuario/perfil/perfil.component';
 import { AdminComponent } from './usuario/admin/admin.component';
 
 
@@ -24,7 +23,6 @@ const routes: Route []= [
   {path: '', component: HomeComponent},
   {path: 'inicio', component: HomeComponent},
   {path: 'user/login', component: LoginComponent},
-  {path: 'user/profile', component: PerfilComponent},
   {path: 'user/admin', component: AdminComponent}
 ];
 
@@ -34,7 +32,6 @@ const routes: Route []= [
     HomeComponent,
     NavbarComponent,
     LoginComponent,
-    PerfilComponent,
     AdminComponent
   ],
   imports: [

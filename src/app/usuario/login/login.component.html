@@ -7,12 +7,12 @@
 		<div class="login-content">
 			<form #formLogin="ngForm" (submit)="onLogin()">
 				<img src="../../assets/img/avatar.svg">
-				<h2 class="title" *ngIf="!isError">Bienvenido</h2>
-
+				
+				<h2 class="title">Bienvenido</h2>
 				<div class="alert alert-danger" role="alert" *ngIf="isError">
-					Something is wrong!
-				  </div>
-
+					Usuario o contraseña incorrectos
+				</div>
+				<br>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fa fa-user"></i>

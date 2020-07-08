@@ -1,9 +1,9 @@
 <nav>
   <div class="logo">
-    <img src="" alt="">
+    <img src="../../assets/img/logoA.png" alt="logo.png" *ngIf="!isLogged">
   </div>
   <ul>
-    <li *ngIf="!isLogged">
+    <li>
       <a href="" class="active">Inicio</a>
     </li>
     <li *ngIf="!isLogged">
@@ -19,9 +19,6 @@
       <a routerLink="user/login">Iniciar Sesión</a>
     </li>
 
-    <li *ngIf="isLogged">
-      <a routerLink="user/profile">Perfil</a>
-    </li>
     <li *ngIf="isLogged">
       <a routerLink="user/admin">Administrar Contenido</a>
     </li>
