@@ -1,7 +1,13 @@
 <nav>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
   <div class="logo">
-    <img src="../../assets/img/logoA.png" alt="logo.png" *ngIf="!isLogged">
+    <img src="../../assets/img/logoA.png" alt="logo.png">
   </div>
+
   <ul>
     <li>
       <a href="" class="active">Inicio</a>
@@ -21,6 +27,9 @@
 
     <li *ngIf="isLogged">
       <a routerLink="user/admin">Administrar Contenido</a>
+    </li>
+    <li *ngIf="isLogged">
+      <a routerLink="user/admin">Nuevo Proyecto</a>
     </li>
     <li  *ngIf="isLogged">
       <a href="" (click)="onLogout()">Cerrar Sesión</a>
