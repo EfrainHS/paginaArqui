@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Arquitec</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +17,11 @@
         else{
           $('nav').removeClass('black');
         }
+      })
+      $(document).ready(function(){
+        $(".menu h4").click(function(){
+          $("nav ul").toggleClass("active")
+        })
       })
   </script>
 
