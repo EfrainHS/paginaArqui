@@ -66,3 +66,7 @@
   font-weight: 500;
   text-decoration: none;
 }
+
+.contenedor .targeta button:hover{
+  background: #e7e1ce;
+}

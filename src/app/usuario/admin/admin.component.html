@@ -2,50 +2,10 @@
 <div class="padre">
     <h1 class="titulo"> Proyectos Existentes </h1>
     <div class="contenedor">
-        <div class="targeta">
-            <img src="" alt="">
-            <h4>Encabezado 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vel numquam aut voluptate totam quas maiores modi, voluptatum, eaque sint facilis velit delectus consequatur quidem cum aspernatur. Totam, itaque ipsum.</p>
-            <div>
-                <button type="button" class="btn btn-primary">
-                    <i class="fa fa-edit"></i>
-                    Ver
-                </button>
-                <button type="button" class="btn btn-warning">
-                    <i class="fa fa-edit"></i>
-                    Editar
-                </button>
-                <button type="button" class="btn btn-danger">
-                    <i class="fa fa-trash"></i>
-                    Eliminar
-                </button>
-            </div>
-        </div>
-
-        <div class="targeta">
-            <img src="" alt="">
-            <h4>Encabezado 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vel numquam aut voluptate totam quas maiores modi, voluptatum, eaque sint facilis velit delectus consequatur quidem cum aspernatur. Totam, itaque ipsum.</p>
-            <div>
-                <button type="button" class="btn btn-primary">
-                    <i class="fa fa-edit"></i>
-                    Ver
-                </button>
-                <button type="button" class="btn btn-warning">
-                    <i class="fa fa-edit"></i>
-                    Editar
-                </button>
-                <button type="button" class="btn btn-danger">
-                    <i class="fa fa-trash"></i>
-                    Eliminar
-                </button>
-            </div>
-        </div>
-
-        <div class="targeta">
-            <img src="" alt="">
-            <h4>Encabezado 1</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vel numquam aut voluptate totam quas maiores modi, voluptatum, eaque sint facilis velit delectus consequatur quidem cum aspernatur. Totam, itaque ipsum.</p>
+        <div class="targeta" *ngFor="let proyecto of proyects; index as i">
+            <img src="{{proyecto.fotos}}" alt="Imagen Ilustrativa">
+            <h4> {{proyecto.titulo}} </h4>
+            <p> {{proyecto.descripcion}} </p>
             <div>
                 <button type="button" class="btn btn-primary">
                     <i class="fa fa-edit"></i>

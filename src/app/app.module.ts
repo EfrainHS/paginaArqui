@@ -16,6 +16,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AdminComponent } from './usuario/admin/admin.component';
+import { RegistroProyectoComponent } from './usuario/registro-proyecto/registro-proyecto.component';
 
 
 
@@ -23,7 +24,8 @@ const routes: Route []= [
   {path: '', component: HomeComponent},
   {path: 'inicio', component: HomeComponent},
   {path: 'user/login', component: LoginComponent},
-  {path: 'user/admin', component: AdminComponent}
+  {path: 'user/admin', component: AdminComponent},
+  {path: 'user/registro', component: RegistroProyectoComponent}
 ];
 
 @NgModule({
@@ -32,7 +34,8 @@ const routes: Route []= [
     HomeComponent,
     NavbarComponent,
     LoginComponent,
-    AdminComponent
+    AdminComponent,
+    RegistroProyectoComponent
   ],
   imports: [
     BrowserModule,
